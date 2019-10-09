@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1> {{title}}</h1> 
+<label for="name">Please enter your First Name :</label>
+
+<input [(ngModel)]='firstName'  type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+<p>you just entered your first name as:{{firstName}}</p>
+<button type="button" (click)='myMethod()'  >Click Me!</button>
+
+</body>
+</html>
